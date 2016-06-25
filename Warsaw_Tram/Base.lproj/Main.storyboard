@@ -18,9 +18,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="rFW-OA-JC0">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Yy-QN-IML">
-                                <rect key="frame" x="77" y="249" width="221" height="30"/>
-                                <state key="normal" title="Show map with trams in Warsaw"/>
+                                <rect key="frame" x="34" y="256" width="306" height="30"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="20"/>
+                                <state key="normal" title="Show map with trams in Warsaw">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <segue destination="gJF-Ge-NGP" kind="show" id="Fch-Me-EBV"/>
                                 </connections>
@@ -30,6 +37,10 @@
                         <constraints>
                             <constraint firstItem="0Yy-QN-IML" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="182" id="5Uk-Ds-nWs"/>
                             <constraint firstItem="0Yy-QN-IML" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6NV-Ft-eA3"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rFW-OA-JC0" secondAttribute="bottom" id="HhG-pc-i2d"/>
+                            <constraint firstItem="rFW-OA-JC0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Kge-Nh-yoc"/>
+                            <constraint firstItem="rFW-OA-JC0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="Rym-Dv-UhK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rFW-OA-JC0" secondAttribute="trailing" constant="-20" id="U7s-Qb-4hA"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="s0R-DU-ru9"/>
@@ -37,7 +48,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1056.5" y="361.5"/>
+            <point key="canvasLocation" x="1047.5" y="366.5"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="sao-23-AqQ">
@@ -51,21 +62,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="dPx-hG-fFV">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dPx-hG-fFV">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <connections>
+                                    <outlet property="delegate" destination="gJF-Ge-NGP" id="FBJ-f8-bhv"/>
+                                </connections>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m20-4f-g3i">
+                                <rect key="frame" x="20" y="621" width="39" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="f3N-Ds-6Og"/>
+                                    <constraint firstAttribute="height" constant="35" id="qE4-9g-9sD"/>
+                                </constraints>
+                                <state key="normal" image="locationButton.png"/>
+                                <connections>
+                                    <action selector="showCurrentLocation:" destination="gJF-Ge-NGP" eventType="touchUpInside" id="Tp4-yU-3al"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="dPx-hG-fFV" firstAttribute="top" secondItem="K5M-iQ-0cO" secondAttribute="bottom" id="GUK-4Q-Ej1"/>
-                            <constraint firstItem="dPx-hG-fFV" firstAttribute="leading" secondItem="gZh-wT-Hjr" secondAttribute="leadingMargin" constant="-20" id="fIA-Xc-wIp"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="dPx-hG-fFV" secondAttribute="trailing" constant="-20" id="jZs-2w-vJq"/>
-                            <constraint firstItem="is4-0Y-jKI" firstAttribute="top" secondItem="dPx-hG-fFV" secondAttribute="bottom" id="sKv-O4-fk0"/>
+                            <constraint firstItem="is4-0Y-jKI" firstAttribute="top" secondItem="m20-4f-g3i" secondAttribute="bottom" constant="8" id="HjH-u5-n6D"/>
+                            <constraint firstItem="m20-4f-g3i" firstAttribute="leading" secondItem="gZh-wT-Hjr" secondAttribute="leadingMargin" id="VyP-UN-oTB"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="map" destination="dPx-hG-fFV" id="Cvp-kO-qZW"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="showMainDesktop" id="nJn-jY-AX9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B9o-06-IWy" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -92,4 +116,11 @@
             <point key="canvasLocation" x="591" y="367"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="background.png" width="394" height="727"/>
+        <image name="locationButton.png" width="39" height="38"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="nJn-jY-AX9"/>
+    </inferredMetricsTieBreakers>
 </document>
