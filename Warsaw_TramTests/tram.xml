@@ -1,0 +1,2144 @@
+{
+result =     (
+{
+Brigade = "7   ";
+FirstLine = "28 ";
+Lat = "52.2539291";
+Lines = "28             ";
+Lon = "21.0545673";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:12";
+},
+{
+Brigade = "4   ";
+FirstLine = "28 ";
+Lat = "52.2667236";
+Lines = "28             ";
+Lon = "20.9315147";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:15";
+},
+{
+Brigade = "6   ";
+FirstLine = "24 ";
+Lat = "52.2487297";
+Lines = "24             ";
+Lon = "21.0448265";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:10";
+},
+{
+Brigade = "7   ";
+FirstLine = "24 ";
+Lat = "52.2451096";
+Lines = "24             ";
+Lon = "21.0840321";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:45:53";
+},
+{
+Brigade = "010 ";
+FirstLine = "23 ";
+Lat = "52.2603531";
+Lines = "23             ";
+Lon = "20.9250546";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:14";
+},
+{
+Brigade = "12  ";
+FirstLine = "9  ";
+Lat = "52.2319221";
+Lines = "9              ";
+Lon = "21.0215435";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:12";
+},
+{
+Brigade = "12  ";
+FirstLine = "24 ";
+Lat = "52.2308464";
+Lines = "24             ";
+Lon = "20.9839401";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:14";
+},
+{
+Brigade = "10  ";
+FirstLine = "24 ";
+Lat = "52.2316856";
+Lines = "24             ";
+Lon = "21.0201092";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:10";
+},
+{
+Brigade = "1   ";
+FirstLine = "23 ";
+Lat = "52.2601891";
+Lines = "23             ";
+Lon = "20.9248676";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:13";
+},
+{
+Brigade = "012 ";
+FirstLine = "23 ";
+Lat = "52.2498665";
+Lines = "23             ";
+Lon = "21.0434322";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:10";
+},
+{
+Brigade = "4   ";
+FirstLine = "13 ";
+Lat = "52.2515106";
+Lines = "13             ";
+Lon = "21.0385952";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:14";
+},
+{
+Brigade = "5   ";
+FirstLine = "23 ";
+Lat = "52.2543526";
+Lines = "23             ";
+Lon = "21.0540905";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:13";
+},
+{
+Brigade = "12  ";
+FirstLine = "1  ";
+Lat = "52.2551003";
+Lines = "1              ";
+Lon = "20.984375";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:11";
+},
+{
+Brigade = "3   ";
+FirstLine = "1  ";
+Lat = "52.2544785";
+Lines = "1              ";
+Lon = "20.9819584";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:14";
+},
+{
+Brigade = "19  ";
+FirstLine = "1  ";
+Lat = "52.2145424";
+Lines = "1              ";
+Lon = "20.9794979";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:10";
+},
+{
+Brigade = "010 ";
+FirstLine = "14 ";
+Lat = "52.204834";
+Lines = "14             ";
+Lon = "21.0230141";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:12";
+},
+{
+Brigade = "4   ";
+FirstLine = "7  ";
+Lat = "52.1933784";
+Lines = "7              ";
+Lon = "20.9609146";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:11";
+},
+{
+Brigade = "6   ";
+FirstLine = "25 ";
+Lat = "52.2366066";
+Lines = "25             ";
+Lon = "21.0441227";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:10";
+},
+{
+Brigade = "6   ";
+FirstLine = "33 ";
+Lat = "52.2717705";
+Lines = "33             ";
+Lon = "20.9446106";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:10";
+},
+{
+Brigade = "6   ";
+FirstLine = "3  ";
+Lat = "52.2459145";
+Lines = "3              ";
+Lon = "21.0747261";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:13";
+},
+{
+Brigade = "3   ";
+FirstLine = "7  ";
+Lat = "52.1760063";
+Lines = "7              ";
+Lon = "20.9439068";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:45:55";
+},
+{
+Brigade = "6   ";
+FirstLine = "75 ";
+Lat = "52.2668724";
+Lines = "75             ";
+Lon = "20.9625301";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:12";
+},
+{
+Brigade = "36  ";
+FirstLine = "17 ";
+Lat = "52.2082977";
+Lines = "17             ";
+Lon = "21.0078335";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:14";
+},
+{
+Brigade = "1   ";
+FirstLine = "33 ";
+Lat = "52.213192";
+Lines = "33             ";
+Lon = "21.0062046";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:10";
+},
+{
+Brigade = "2   ";
+FirstLine = "22 ";
+Lat = "52.2296906";
+Lines = "22             ";
+Lon = "21.0111294";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:13";
+},
+{
+Brigade = "011 ";
+FirstLine = "3  ";
+Lat = "52.2501183";
+Lines = "3              ";
+Lon = "21.0438919";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:10";
+},
+{
+Brigade = "5   ";
+FirstLine = "4  ";
+Lat = "52.1729927";
+Lines = "4              ";
+Lon = "21.0196285";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:15";
+},
+{
+Brigade = "10  ";
+FirstLine = "33 ";
+Lat = "52.2917824";
+Lines = "33             ";
+Lon = "20.929884";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:13";
+},
+{
+Brigade = "5   ";
+FirstLine = "24 ";
+Lat = "52.2261848";
+Lines = "24             ";
+Lon = "20.9946594";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:11";
+},
+{
+Brigade = "34  ";
+FirstLine = "9  ";
+Lat = "52.2249985";
+Lines = "9              ";
+Lon = "20.9897785";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:15";
+},
+{
+Brigade = "33  ";
+FirstLine = "9  ";
+Lat = "52.1763191";
+Lines = "9              ";
+Lon = "20.9440384";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:11";
+},
+{
+Brigade = "9   ";
+FirstLine = "75 ";
+Lat = "52.2750053";
+Lines = "75             ";
+Lon = "20.9802151";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:11";
+},
+{
+Brigade = "015 ";
+FirstLine = "20 ";
+Lat = "52.2450294";
+Lines = "20             ";
+Lon = "21.0028667";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:12";
+},
+{
+Brigade = "3   ";
+FirstLine = "2  ";
+Lat = "52.292141";
+Lines = "2              ";
+Lon = "20.9298038";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:13";
+},
+{
+Brigade = "5   ";
+FirstLine = "2  ";
+Lat = "52.3021965";
+Lines = "2              ";
+Lon = "20.9407845";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:10";
+},
+{
+Brigade = "9   ";
+FirstLine = "17 ";
+Lat = "52.2903824";
+Lines = "17             ";
+Lon = "20.950058";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:12";
+},
+{
+Brigade = "1   ";
+FirstLine = "20 ";
+Lat = "52.2878189";
+Lines = "20             ";
+Lon = "21.0049915";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:12";
+},
+{
+Brigade = "2   ";
+FirstLine = "3  ";
+Lat = "52.298336";
+Lines = "3              ";
+Lon = "21.0223961";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:14";
+},
+{
+Brigade = "12  ";
+FirstLine = "26 ";
+Lat = "52.237854";
+Lines = "26             ";
+Lon = "20.9821911";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:06";
+},
+{
+Brigade = "8   ";
+FirstLine = "3  ";
+Lat = "52.2381172";
+Lines = "3              ";
+Lon = "21.1188335";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:12";
+},
+{
+Brigade = "9   ";
+FirstLine = "3  ";
+Lat = "52.2436714";
+Lines = "3              ";
+Lon = "21.0965557";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:09";
+},
+{
+Brigade = "7   ";
+FirstLine = "33 ";
+Lat = "52.2803268";
+Lines = "33             ";
+Lon = "20.9277954";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:45:58";
+},
+{
+Brigade = "32  ";
+FirstLine = "17 ";
+Lat = "52.1862144";
+Lines = "17             ";
+Lon = "21.0021191";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:11";
+},
+{
+Brigade = "11  ";
+FirstLine = "20 ";
+Lat = "52.2865753";
+Lines = "20             ";
+Lon = "21.0062809";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:11";
+},
+{
+Brigade = "14  ";
+FirstLine = "24 ";
+Lat = "52.2472343";
+Lines = "24             ";
+Lon = "20.9253712";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:13";
+},
+{
+Brigade = "6   ";
+FirstLine = "22 ";
+Lat = "52.2711029";
+Lines = "22             ";
+Lon = "20.9438038";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:12";
+},
+{
+Brigade = "34  ";
+FirstLine = "17 ";
+Lat = "52.1816597";
+Lines = "17             ";
+Lon = "20.9889126";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:14";
+},
+{
+Brigade = "10  ";
+FirstLine = "18 ";
+Lat = "52.1805725";
+Lines = "18             ";
+Lon = "20.9916897";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:10";
+},
+{
+Brigade = "11  ";
+FirstLine = "33 ";
+Lat = "52.2751732";
+Lines = "33             ";
+Lon = "20.9385509";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:14";
+},
+{
+Brigade = "32  ";
+FirstLine = "9  ";
+Lat = "52.1758232";
+Lines = "9              ";
+Lon = "20.9437256";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:14";
+},
+{
+Brigade = "36  ";
+FirstLine = "9  ";
+Lat = "52.2396584";
+Lines = "9              ";
+Lon = "21.0586929";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:13";
+},
+{
+Brigade = "3   ";
+FirstLine = "23 ";
+Lat = "52.2533112";
+Lines = "23             ";
+Lon = "20.9149532";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:12";
+},
+{
+Brigade = "6   ";
+FirstLine = "10 ";
+Lat = "52.1741524";
+Lines = "10             ";
+Lon = "21.0200443";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:14";
+},
+{
+Brigade = "5   ";
+FirstLine = "10 ";
+Lat = "52.1681213";
+Lines = "10             ";
+Lon = "21.0159321";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:14";
+},
+{
+Brigade = "2   ";
+FirstLine = "10 ";
+Lat = "52.2066498";
+Lines = "10             ";
+Lon = "21.0224476";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:01";
+},
+{
+Brigade = "4   ";
+FirstLine = "1  ";
+Lat = "52.2584915";
+Lines = "1              ";
+Lon = "20.9971161";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:14";
+},
+{
+Brigade = "13  ";
+FirstLine = "4  ";
+Lat = "52.2991104";
+Lines = "4              ";
+Lon = "21.0227776";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:12";
+},
+{
+Brigade = "7   ";
+FirstLine = "1  ";
+Lat = "52.2964935";
+Lines = "1              ";
+Lon = "21.0247612";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:14";
+},
+{
+Brigade = "7   ";
+FirstLine = "4  ";
+Lat = "52.1680374";
+Lines = "4              ";
+Lon = "21.0159798";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:13";
+},
+{
+Brigade = "40  ";
+FirstLine = "17 ";
+Lat = "52.2660828";
+Lines = "17             ";
+Lon = "20.9773884";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:11";
+},
+{
+Brigade = "3   ";
+FirstLine = "33 ";
+Lat = "52.2396889";
+Lines = "33             ";
+Lon = "20.9954891";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:11";
+},
+{
+Brigade = "18  ";
+FirstLine = "33 ";
+Lat = "52.2067909";
+Lines = "33             ";
+Lon = "21.0035801";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:13";
+},
+{
+Brigade = "17  ";
+FirstLine = "33 ";
+Lat = "52.2067032";
+Lines = "33             ";
+Lon = "21.0026188";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:13";
+},
+{
+Brigade = "9   ";
+FirstLine = "22 ";
+Lat = "52.2485123";
+Lines = "22             ";
+Lon = "21.0455017";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:10";
+},
+{
+Brigade = "9   ";
+FirstLine = "26 ";
+Lat = "52.2446709";
+Lines = "26             ";
+Lon = "21.0849247";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:10";
+},
+{
+Brigade = "8   ";
+FirstLine = "7  ";
+Lat = "52.2581329";
+Lines = "7              ";
+Lon = "21.0597878";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:15";
+},
+{
+Brigade = "1   ";
+FirstLine = "7  ";
+Lat = "52.1837883";
+Lines = "7              ";
+Lon = "20.9521885";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:14";
+},
+{
+Brigade = "10  ";
+FirstLine = "26 ";
+Lat = "52.2465744";
+Lines = "26             ";
+Lon = "21.0628262";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:13";
+},
+{
+Brigade = "010 ";
+FirstLine = "3  ";
+Lat = "52.2568932";
+Lines = "3              ";
+Lon = "21.0545635";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:12";
+},
+{
+Brigade = "3   ";
+FirstLine = "3  ";
+Lat = "52.2985191";
+Lines = "3              ";
+Lon = "21.0217667";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:13";
+},
+{
+Brigade = "37  ";
+FirstLine = "9  ";
+Lat = "52.2445869";
+Lines = "9              ";
+Lon = "21.0849476";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:14";
+},
+{
+Brigade = "11  ";
+FirstLine = "10 ";
+Lat = "52.2225571";
+Lines = "10             ";
+Lon = "20.9255161";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:11";
+},
+{
+Brigade = "5   ";
+FirstLine = "26 ";
+Lat = "52.2419205";
+Lines = "26             ";
+Lon = "20.9935799";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:13";
+},
+{
+Brigade = "3   ";
+FirstLine = "26 ";
+Lat = "52.2386627";
+Lines = "26             ";
+Lon = "20.9009895";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:11";
+},
+{
+Brigade = "8   ";
+FirstLine = "26 ";
+Lat = "52.245266";
+Lines = "26             ";
+Lon = "21.0841675";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:13";
+},
+{
+Brigade = "4   ";
+FirstLine = "26 ";
+Lat = "52.2257576";
+Lines = "26             ";
+Lon = "20.9162846";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:11";
+},
+{
+Brigade = "021 ";
+FirstLine = "9  ";
+Lat = "52.204525";
+Lines = "9              ";
+Lon = "20.9708767";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:12";
+},
+{
+Brigade = "31  ";
+FirstLine = "9  ";
+Lat = "52.2143173";
+Lines = "9              ";
+Lon = "20.9793816";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:13";
+},
+{
+Brigade = "6   ";
+FirstLine = "7  ";
+Lat = "52.2257576";
+Lines = "7              ";
+Lon = "20.9927998";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:14";
+},
+{
+Brigade = "35  ";
+FirstLine = "9  ";
+Lat = "52.2251511";
+Lines = "9              ";
+Lon = "20.9901104";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:11";
+},
+{
+Brigade = "2   ";
+FirstLine = "75 ";
+Lat = "52.2536583";
+Lines = "75             ";
+Lon = "20.983345";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:10";
+},
+{
+Brigade = "042 ";
+FirstLine = "17 ";
+Lat = "52.2324944";
+Lines = "17             ";
+Lon = "20.9984894";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:10";
+},
+{
+Brigade = "8   ";
+FirstLine = "17 ";
+Lat = "52.3242455";
+Lines = "17             ";
+Lon = "20.9426098";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:12";
+},
+{
+Brigade = "40  ";
+FirstLine = "9  ";
+Lat = "52.220192";
+Lines = "9              ";
+Lon = "21.0043011";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:15";
+},
+{
+Brigade = "7   ";
+FirstLine = "17 ";
+Lat = "52.2983971";
+Lines = "17             ";
+Lon = "20.9423618";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:15";
+},
+{
+Brigade = "9   ";
+FirstLine = "24 ";
+Lat = "52.2440033";
+Lines = "24             ";
+Lon = "21.0949936";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:15";
+},
+{
+Brigade = "13  ";
+FirstLine = "1  ";
+Lat = "52.2394714";
+Lines = "1              ";
+Lon = "20.9778233";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:13";
+},
+{
+Brigade = "1   ";
+FirstLine = "18 ";
+Lat = "52.2900391";
+Lines = "18             ";
+Lon = "21.0024643";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:12";
+},
+{
+Brigade = "39  ";
+FirstLine = "9  ";
+Lat = "52.2305374";
+Lines = "9              ";
+Lon = "21.015028";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:11";
+},
+{
+Brigade = "14  ";
+FirstLine = "17 ";
+Lat = "52.1819";
+Lines = "17             ";
+Lon = "20.9887295";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:11";
+},
+{
+Brigade = "9   ";
+FirstLine = "4  ";
+Lat = "52.1938324";
+Lines = "4              ";
+Lon = "21.0242786";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:01";
+},
+{
+Brigade = "8   ";
+FirstLine = "33 ";
+Lat = "52.2918968";
+Lines = "33             ";
+Lon = "20.9300766";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:12";
+},
+{
+Brigade = "13  ";
+FirstLine = "17 ";
+Lat = "52.1858521";
+Lines = "17,41          ";
+Lon = "21.0021133";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:13";
+},
+{
+Brigade = "4   ";
+FirstLine = "33 ";
+Lat = "52.2554016";
+Lines = "33             ";
+Lon = "20.9821472";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:10";
+},
+{
+Brigade = "13  ";
+FirstLine = "33 ";
+Lat = "52.2748718";
+Lines = "33             ";
+Lon = "20.9389458";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:13";
+},
+{
+Brigade = "12  ";
+FirstLine = "17 ";
+Lat = "52.2093277";
+Lines = "17             ";
+Lon = "21.0075207";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:15";
+},
+{
+Brigade = "6   ";
+FirstLine = "2  ";
+Lat = "52.3241692";
+Lines = "2              ";
+Lon = "20.9426537";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:10";
+},
+{
+Brigade = "11  ";
+FirstLine = "4  ";
+Lat = "52.272316";
+Lines = "4              ";
+Lon = "20.9710732";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:11";
+},
+{
+Brigade = "1   ";
+FirstLine = "28 ";
+Lat = "52.2387581";
+Lines = "28             ";
+Lon = "20.9012623";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:14";
+},
+{
+Brigade = "7   ";
+FirstLine = "26 ";
+Lat = "52.2473183";
+Lines = "26             ";
+Lon = "21.0525093";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:11";
+},
+{
+Brigade = "1   ";
+FirstLine = "26 ";
+Lat = "52.2777023";
+Lines = "26             ";
+Lon = "20.9351368";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:15";
+},
+{
+Brigade = "6   ";
+FirstLine = "17 ";
+Lat = "52.2842064";
+Lines = "17             ";
+Lon = "20.9556179";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:11";
+},
+{
+Brigade = "14  ";
+FirstLine = "33 ";
+Lat = "52.241539";
+Lines = "33             ";
+Lon = "20.9939194";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:11";
+},
+{
+Brigade = "7   ";
+FirstLine = "2  ";
+Lat = "52.3243752";
+Lines = "2              ";
+Lon = "20.9430542";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:10";
+},
+{
+Brigade = "38  ";
+FirstLine = "17 ";
+Lat = "52.2556458";
+Lines = "17             ";
+Lon = "20.9820423";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:12";
+},
+{
+Brigade = "9   ";
+FirstLine = "33 ";
+Lat = "52.2967758";
+Lines = "33             ";
+Lon = "21.0245533";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:13";
+},
+{
+Brigade = "2   ";
+FirstLine = "17 ";
+Lat = "52.1827393";
+Lines = "17             ";
+Lon = "21.00214";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:10";
+},
+{
+Brigade = "1   ";
+FirstLine = "2  ";
+Lat = "52.2472496";
+Lines = "2              ";
+Lon = "20.9889736";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:11";
+},
+{
+Brigade = "7   ";
+FirstLine = "15 ";
+Lat = "52.2150841";
+Lines = "15,35          ";
+Lon = "21.0207272";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:13";
+},
+{
+Brigade = "16  ";
+FirstLine = "15 ";
+Lat = "52.2415352";
+Lines = "15,35          ";
+Lon = "20.9778042";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:13";
+},
+{
+Brigade = "6   ";
+FirstLine = "35 ";
+Lat = "52.2352524";
+Lines = "35,15          ";
+Lon = "21.0085106";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:11";
+},
+{
+Brigade = "3   ";
+FirstLine = "28 ";
+Lat = "52.2388039";
+Lines = "28             ";
+Lon = "20.9001789";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:12";
+},
+{
+Brigade = "3   ";
+FirstLine = "11 ";
+Lat = "52.2911758";
+Lines = "11             ";
+Lon = "20.9297733";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:13";
+},
+{
+Brigade = "9   ";
+FirstLine = "28 ";
+Lat = "52.2549477";
+Lines = "28             ";
+Lon = "21.0346203";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:14";
+},
+{
+Brigade = "020 ";
+FirstLine = "35 ";
+Lat = "52.2115288";
+Lines = "35,15          ";
+Lon = "20.9770393";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:06";
+},
+{
+Brigade = "12  ";
+FirstLine = "35 ";
+Lat = "52.1803856";
+Lines = "35,15          ";
+Lon = "20.9485035";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:12";
+},
+{
+Brigade = "9   ";
+FirstLine = "20 ";
+Lat = "52.2615433";
+Lines = "20             ";
+Lon = "21.0223618";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:10";
+},
+{
+Brigade = "016 ";
+FirstLine = "9  ";
+Lat = "52.2445221";
+Lines = "9              ";
+Lon = "21.0849056";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:14";
+},
+{
+Brigade = "5   ";
+FirstLine = "11 ";
+Lat = "52.2903748";
+Lines = "11             ";
+Lon = "20.9297485";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:12";
+},
+{
+Brigade = "012 ";
+FirstLine = "11 ";
+Lat = "52.2917747";
+Lines = "11             ";
+Lon = "20.9294415";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:10";
+},
+{
+Brigade = "5   ";
+FirstLine = "15 ";
+Lat = "52.2272377";
+Lines = "15,35          ";
+Lon = "21.01334";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:11";
+},
+{
+Brigade = "022 ";
+FirstLine = "35 ";
+Lat = "41.5163498";
+Lines = "35,15          ";
+Lon = "355.282959";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:14";
+},
+{
+Brigade = "10  ";
+FirstLine = "15 ";
+Lat = "52.2199898";
+Lines = "15,35          ";
+Lon = "20.9999619";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:11";
+},
+{
+Brigade = "013 ";
+FirstLine = "11 ";
+Lat = "52.2631683";
+Lines = "11             ";
+Lon = "20.9271526";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:12";
+},
+{
+Brigade = "2   ";
+FirstLine = "13 ";
+Lat = "52.2570305";
+Lines = "13             ";
+Lon = "21.0325222";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:07";
+},
+{
+Brigade = "3   ";
+FirstLine = "6  ";
+Lat = "52.2994766";
+Lines = "6              ";
+Lon = "20.9336052";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:10";
+},
+{
+Brigade = "014 ";
+FirstLine = "6  ";
+Lat = "52.2466583";
+Lines = "6              ";
+Lon = "21.0619202";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:02";
+},
+{
+Brigade = "019 ";
+FirstLine = "4  ";
+Lat = "52.2242813";
+Lines = "4              ";
+Lon = "21.0150795";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:08";
+},
+{
+Brigade = "017 ";
+FirstLine = "6  ";
+Lat = "52.2920723";
+Lines = "6              ";
+Lon = "20.9298477";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:12";
+},
+{
+Brigade = "017 ";
+FirstLine = "17 ";
+Lat = "52.321022";
+Lines = "17             ";
+Lon = "20.9476528";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:14";
+},
+{
+Brigade = "6   ";
+FirstLine = "1  ";
+Lat = "52.2807236";
+Lines = "1              ";
+Lon = "21.0260773";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:13";
+},
+{
+Brigade = "016 ";
+FirstLine = "22 ";
+Lat = "52.2447929";
+Lines = "22             ";
+Lon = "21.0853252";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:14";
+},
+{
+Brigade = "015 ";
+FirstLine = "22 ";
+Lat = "52.2292442";
+Lines = "22             ";
+Lon = "21.0089741";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:12";
+},
+{
+Brigade = "3   ";
+FirstLine = "75 ";
+Lat = "52.2814865";
+Lines = "75             ";
+Lon = "20.9234047";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:14";
+},
+{
+Brigade = "9   ";
+FirstLine = "1  ";
+Lat = "52.2986794";
+Lines = "1              ";
+Lon = "21.0215893";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:14";
+},
+{
+Brigade = "12  ";
+FirstLine = "28 ";
+Lat = "52.2551956";
+Lines = "28             ";
+Lon = "20.9175606";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:12";
+},
+{
+Brigade = "6   ";
+FirstLine = "28 ";
+Lat = "52.2577667";
+Lines = "28             ";
+Lon = "20.9941044";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:14";
+},
+{
+Brigade = "015 ";
+FirstLine = "6  ";
+Lat = "52.2620277";
+Lines = "6              ";
+Lon = "20.9929428";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:10";
+},
+{
+Brigade = "11  ";
+FirstLine = "25 ";
+Lat = "52.2545776";
+Lines = "25             ";
+Lon = "21.035017";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:10";
+},
+{
+Brigade = "9   ";
+FirstLine = "25 ";
+Lat = "52.2881088";
+Lines = "25             ";
+Lon = "21.0307579";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:15";
+},
+{
+Brigade = "017 ";
+FirstLine = "24 ";
+Lat = "52.2470856";
+Lines = "24             ";
+Lon = "20.9484539";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:01";
+},
+{
+Brigade = "015 ";
+FirstLine = "26 ";
+Lat = "52.2524948";
+Lines = "26             ";
+Lon = "21.0295238";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:14";
+},
+{
+Brigade = "015 ";
+FirstLine = "28 ";
+Lat = "52.2570152";
+Lines = "28             ";
+Lon = "21.0557957";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:14";
+},
+{
+Brigade = "12  ";
+FirstLine = "22 ";
+Lat = "52.2465591";
+Lines = "22             ";
+Lon = "21.0635567";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:10";
+},
+{
+Brigade = "3   ";
+FirstLine = "18 ";
+Lat = "52.2904015";
+Lines = "18             ";
+Lon = "21.0025101";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:10";
+},
+{
+Brigade = "3   ";
+FirstLine = "22 ";
+Lat = "52.2444191";
+Lines = "22             ";
+Lon = "20.977211";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:11";
+},
+{
+Brigade = "8   ";
+FirstLine = "75 ";
+Lat = "52.2751999";
+Lines = "75             ";
+Lon = "20.9804764";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:13";
+},
+{
+Brigade = "13  ";
+FirstLine = "18 ";
+Lat = "52.2433586";
+Lines = "18             ";
+Lon = "21.0025616";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:11";
+},
+{
+Brigade = "10  ";
+FirstLine = "10 ";
+Lat = "52.2292747";
+Lines = "10             ";
+Lon = "20.9779148";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:13";
+},
+{
+Brigade = "8   ";
+FirstLine = "22 ";
+Lat = "52.2530403";
+Lines = "22             ";
+Lon = "20.981205";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:14";
+},
+{
+Brigade = "5   ";
+FirstLine = "75 ";
+Lat = "52.2602615";
+Lines = "75             ";
+Lon = "20.9248295";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:11";
+},
+{
+Brigade = "8   ";
+FirstLine = "10 ";
+Lat = "52.2329597";
+Lines = "10             ";
+Lon = "20.998148";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:13";
+},
+{
+Brigade = "016 ";
+FirstLine = "10 ";
+Lat = "52.2021027";
+Lines = "10             ";
+Lon = "21.0234337";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:13";
+},
+{
+Brigade = "09  ";
+FirstLine = "27 ";
+Lat = "52.2248192";
+Lines = "27             ";
+Lon = "20.9310379";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:11";
+},
+{
+Brigade = "6   ";
+FirstLine = "18 ";
+Lat = "52.209549";
+Lines = "18             ";
+Lon = "21.0213947";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:14";
+},
+{
+Brigade = "017 ";
+FirstLine = "9  ";
+Lat = "52.2284164";
+Lines = "9              ";
+Lon = "21.0051193";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:11";
+},
+{
+Brigade = "016 ";
+FirstLine = "28 ";
+Lat = "52.186657";
+Lines = "28             ";
+Lon = "20.8916721";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:45:26";
+},
+{
+Brigade = "011 ";
+FirstLine = "7  ";
+Lat = "52.2037086";
+Lines = "7              ";
+Lon = "20.9701767";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:15";
+},
+{
+Brigade = "2   ";
+FirstLine = "25 ";
+Lat = "52.2225761";
+Lines = "25             ";
+Lon = "20.9867287";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:11";
+},
+{
+Brigade = "5   ";
+FirstLine = "9  ";
+Lat = "52.1887856";
+Lines = "9              ";
+Lon = "21.0006924";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:14";
+},
+{
+Brigade = "3   ";
+FirstLine = "25 ";
+Lat = "52.2104568";
+Lines = "25             ";
+Lon = "20.9794464";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:12";
+},
+{
+Brigade = "017 ";
+FirstLine = "26 ";
+Lat = "52.2568703";
+Lines = "26             ";
+Lon = "21.0326405";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:12";
+},
+{
+Brigade = "3   ";
+FirstLine = "31 ";
+Lat = "52.1887817";
+Lines = "31             ";
+Lon = "21.0026054";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:13";
+},
+{
+Brigade = "7   ";
+FirstLine = "22 ";
+Lat = "52.257782";
+Lines = "22             ";
+Lon = "20.9813557";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:09";
+},
+{
+Brigade = "012 ";
+FirstLine = "7  ";
+Lat = "52.2482567";
+Lines = "7              ";
+Lon = "21.0461483";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:10";
+},
+{
+Brigade = "1   ";
+FirstLine = "25 ";
+Lat = "52.2018356";
+Lines = "25             ";
+Lon = "21.0003738";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:11";
+},
+{
+Brigade = "5   ";
+FirstLine = "22 ";
+Lat = "52.2713356";
+Lines = "22             ";
+Lon = "20.943964";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:15";
+},
+{
+Brigade = "016 ";
+FirstLine = "26 ";
+Lat = "52.2293587";
+Lines = "26             ";
+Lon = "20.9152126";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:14";
+},
+{
+Brigade = "013 ";
+FirstLine = "6  ";
+Lat = "52.2473488";
+Lines = "6              ";
+Lon = "21.051651";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:13";
+},
+{
+Brigade = "3   ";
+FirstLine = "10 ";
+Lat = "52.189682";
+Lines = "10             ";
+Lon = "21.0223026";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:14";
+},
+{
+Brigade = "015 ";
+FirstLine = "25 ";
+Lat = "52.2842941";
+Lines = "25             ";
+Lon = "21.0333424";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:12";
+},
+{
+Brigade = "016 ";
+FirstLine = "4  ";
+Lat = "52.2529793";
+Lines = "4              ";
+Lon = "21.0306816";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:15";
+},
+{
+Brigade = "018 ";
+FirstLine = "24 ";
+Lat = "52.2315598";
+Lines = "24             ";
+Lon = "20.9699078";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:14";
+},
+{
+Brigade = "2   ";
+FirstLine = "27 ";
+Lat = "52.2492638";
+Lines = "27             ";
+Lon = "20.9793911";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:12";
+},
+{
+Brigade = "018 ";
+FirstLine = "9  ";
+Lat = "52.2208672";
+Lines = "9              ";
+Lon = "20.9851303";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:13";
+},
+{
+Brigade = "2   ";
+FirstLine = "20 ";
+Lat = "52.2904396";
+Lines = "20             ";
+Lon = "21.0018291";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:14";
+},
+{
+Brigade = "014 ";
+FirstLine = "9  ";
+Lat = "52.2402077";
+Lines = "9              ";
+Lon = "21.113018";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:11";
+},
+{
+Brigade = "17  ";
+FirstLine = "1  ";
+Lat = "52.2097816";
+Lines = "1              ";
+Lon = "20.9816628";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:11";
+},
+{
+Brigade = "015 ";
+FirstLine = "9  ";
+Lat = "52.2381706";
+Lines = "9              ";
+Lon = "21.1188202";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:13";
+},
+{
+Brigade = "2   ";
+FirstLine = "1  ";
+Lat = "52.2361641";
+Lines = "1              ";
+Lon = "20.9804611";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:14";
+},
+{
+Brigade = "15  ";
+FirstLine = "1  ";
+Lat = "52.220356";
+Lines = "1              ";
+Lon = "20.9847946";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:13";
+},
+{
+Brigade = "015 ";
+FirstLine = "24 ";
+Lat = "52.2601547";
+Lines = "24             ";
+Lon = "20.9249344";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:11";
+},
+{
+Brigade = "9   ";
+FirstLine = "23 ";
+Lat = "52.2473488";
+Lines = "23             ";
+Lon = "20.9564171";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:10";
+},
+{
+Brigade = "8   ";
+FirstLine = "23 ";
+Lat = "52.2520409";
+Lines = "23             ";
+Lon = "21.0284405";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:11";
+},
+{
+Brigade = "018 ";
+FirstLine = "10 ";
+Lat = "52.2233658";
+Lines = "10             ";
+Lon = "20.9286137";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:10";
+},
+{
+Brigade = "5   ";
+FirstLine = "1  ";
+Lat = "52.2668686";
+Lines = "1              ";
+Lon = "21.0307178";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:10";
+},
+{
+Brigade = "14  ";
+FirstLine = "10 ";
+Lat = "52.22929";
+Lines = "10             ";
+Lon = "20.978651";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:13";
+},
+{
+Brigade = "013 ";
+FirstLine = "20 ";
+Lat = "52.2783356";
+Lines = "20             ";
+Lon = "21.0116386";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:11";
+},
+{
+Brigade = "017 ";
+FirstLine = "10 ";
+Lat = "52.2386131";
+Lines = "10             ";
+Lon = "20.9009438";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:12";
+},
+{
+Brigade = "5   ";
+FirstLine = "18 ";
+Lat = "52.2526932";
+Lines = "18             ";
+Lon = "21.0299416";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:15";
+},
+{
+Brigade = "2   ";
+FirstLine = "18 ";
+Lat = "52.2905006";
+Lines = "18             ";
+Lon = "21.0022564";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:10";
+},
+{
+Brigade = "8   ";
+FirstLine = "18 ";
+Lat = "52.1827927";
+Lines = "18             ";
+Lon = "21.0022087";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:12";
+},
+{
+Brigade = "12  ";
+FirstLine = "18 ";
+Lat = "52.2163124";
+Lines = "18             ";
+Lon = "21.0200329";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:10";
+},
+{
+Brigade = "015 ";
+FirstLine = "4  ";
+Lat = "52.293499";
+Lines = "4              ";
+Lon = "21.0270462";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:14";
+},
+{
+Brigade = "1   ";
+FirstLine = "31 ";
+Lat = "52.1818275";
+Lines = "31             ";
+Lon = "20.9888649";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:14";
+},
+{
+Brigade = "16  ";
+FirstLine = "1  ";
+Lat = "52.2097816";
+Lines = "1              ";
+Lon = "20.9820099";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:15";
+},
+{
+Brigade = "017 ";
+FirstLine = "4  ";
+Lat = "52.1783867";
+Lines = "4              ";
+Lon = "21.0215931";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:14";
+},
+{
+Brigade = "016 ";
+FirstLine = "17 ";
+Lat = "52.2360458";
+Lines = "17             ";
+Lon = "20.9970036";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:10";
+},
+{
+Brigade = "12  ";
+FirstLine = "10 ";
+Lat = "52.2362938";
+Lines = "10             ";
+Lon = "20.9140797";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:15";
+},
+{
+Brigade = "9   ";
+FirstLine = "18 ";
+Lat = "52.1818771";
+Lines = "18             ";
+Lon = "20.9888439";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:14";
+},
+{
+Brigade = "020 ";
+FirstLine = "9  ";
+Lat = "52.1760941";
+Lines = "9              ";
+Lon = "20.9438286";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:10";
+},
+{
+Brigade = "7   ";
+FirstLine = "7  ";
+Lat = "52.2564888";
+Lines = "7              ";
+Lon = "21.0531616";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:12";
+},
+{
+Brigade = "013 ";
+FirstLine = "25 ";
+Lat = "52.2151031";
+Lines = "25             ";
+Lon = "20.9803314";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:15";
+},
+{
+Brigade = "6   ";
+FirstLine = "23 ";
+Lat = "52.2601852";
+Lines = "23             ";
+Lon = "21.0428867";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:13";
+},
+{
+Brigade = "1   ";
+FirstLine = "9  ";
+Lat = "52.2355499";
+Lines = "9              ";
+Lon = "21.0391903";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:11";
+},
+{
+Brigade = "014 ";
+FirstLine = "20 ";
+Lat = "52.2447968";
+Lines = "20             ";
+Lon = "20.9652729";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:05";
+},
+{
+Brigade = "019 ";
+FirstLine = "9  ";
+Lat = "52.1929092";
+Lines = "9              ";
+Lon = "20.9605732";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:13";
+},
+{
+Brigade = "015 ";
+FirstLine = "10 ";
+Lat = "52.2273293";
+Lines = "10             ";
+Lon = "21.0020332";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:13";
+},
+{
+Brigade = "4   ";
+FirstLine = "20 ";
+Lat = "52.2419548";
+Lines = "20             ";
+Lon = "20.9938602";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:12";
+},
+{
+Brigade = "4   ";
+FirstLine = "23 ";
+Lat = "52.2380562";
+Lines = "23             ";
+Lon = "20.9826355";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:11";
+},
+{
+Brigade = "6   ";
+FirstLine = "2  ";
+Lat = "52.2458954";
+Lines = "2              ";
+Lon = "21.0000286";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:14";
+},
+{
+Brigade = "6   ";
+FirstLine = "1  ";
+Lat = "52.2458954";
+Lines = "1              ";
+Lon = "21.0000286";
+LowFloor = 0;
+Status = RUNNING;
+Time = "2016-06-30T20:46:14";
+},
+{
+Brigade = "016 ";
+FirstLine = "24 ";
+Lat = "52.2592583";
+Lines = "24             ";
+Lon = "20.9225674";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:12";
+},
+{
+Brigade = "1   ";
+FirstLine = "13 ";
+Lat = "52.243824";
+Lines = "13             ";
+Lon = "20.9671402";
+LowFloor = 1;
+Status = RUNNING;
+Time = "2016-06-30T20:46:14";
+}
+);
+}
