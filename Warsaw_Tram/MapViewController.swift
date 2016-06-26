@@ -13,7 +13,6 @@ import CoreLocation
 class MapViewController: UIViewController {
 
     @IBOutlet var map: MKMapView!
-    
     var locationManager = CLLocationManager()
     var alertHelper: AlertHelper?
     var userLocationDefined: Bool = false
@@ -34,7 +33,6 @@ class MapViewController: UIViewController {
     @IBAction func showCurrentLocation(sender: AnyObject) {
         showUserCurrentLocation()
     }
-    
     private func setupLocationManager() {
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
