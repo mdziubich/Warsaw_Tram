@@ -89,7 +89,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="map" destination="dPx-hG-fFV" id="Cvp-kO-qZW"/>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="showMainDesktop" id="nJn-jY-AX9"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="ShowMainDesktop" id="nJn-jY-AX9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B9o-06-IWy" userLabel="First Responder" sceneMemberID="firstResponder"/>
