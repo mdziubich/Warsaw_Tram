@@ -10,14 +10,14 @@ import UIKit
 import MapKit
 import CoreLocation
 
-class MapViewController: UIViewController {
+class MapViewController: UIViewController, AlertHelperProtocol {
 
     @IBOutlet var map: MKMapView!
     
     var locationManager = CLLocationManager()
     var userLocationDefined = false
     var userLocation: CLLocationCoordinate2D?
-    var activeTrams = [TramViewModel]()
+    let tramViewModel = TramViewModel()
     
     let resourceId = "id=c7238cfe-8b1f-4c38-bb4a-de386db7e776"
     let warsawTramsApiKey = "apikey=060b903c-b0c3-427e-934d-9e4a81a61969"
@@ -46,49 +46,31 @@ class MapViewController: UIViewController {
         map.showsScale = true
     }
     
-    private func fetchTramsData() {
-        let stringURL = "https://api.um.warszawa.pl/api/action/wsstore_get?\(resourceId)&\(warsawTramsApiKey)"
-        let url = NSURL(string: stringURL)!
-        
-        let request = NSMutableURLRequest(URL: url)
-        request.HTTPMethod = "GET"
-        
-        let task = NSURLSession.sharedSession().dataTaskWithRequest(request) { data, response, error in
-            if error != nil {
-                self.goToMainDesktop(errorMessage: error!.localizedDescription)
-            } else if data != nil {
-                guard let jsonResult = (try! NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.MutableContainers)) as? NSDictionary,
-                    let result: NSArray = jsonResult["result"] as? NSArray else {
-                        return self.goToMainDesktop(errorMessage: "No results")
+    private func displayTramsOnMap() {
+        tramViewModel.getTramsData({ (trams) in
+            for tram in trams {
+                if tram.status == "RUNNING" {
+                    dispatch_async(dispatch_get_main_queue(), {
+                        self.addTramAnnotation(tram)
+                    })
                 }
-                
-                for tram in result {
-                    if let singleTram = tram as? [String : AnyObject] {
-                        self.activeTrams.append(TramViewModel(tram: singleTram)!)
-                    }
-                }
-                
-                dispatch_async(dispatch_get_main_queue(), {
-                    self.addTramAnnotation()
-                })
-            } else {
-                self.goToMainDesktop(errorMessage: "No active trams")
             }
-        }
-        task.resume()
+        }, failure: { (error) in
+            dispatch_async(dispatch_get_main_queue(), {
+                self.goToMainDesktop(errorMessage: error)
+            })
+        })
     }
     
-    private func addTramAnnotation() {
-        for tram in self.activeTrams {
-            let location:CLLocationCoordinate2D = CLLocationCoordinate2DMake(tram.lattitude, tram.longitude)
-            let annotation = MKPointAnnotation()
-            annotation.coordinate = location
-            annotation.title = tram.number
-            if tram.lowFloor == true {
-                annotation.subtitle = "Low floor tram"
-            }
-            map.addAnnotation(annotation)
+    private func addTramAnnotation(tram: Tram) {
+        let location:CLLocationCoordinate2D = CLLocationCoordinate2DMake(tram.lattitude, tram.longitude)
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = location
+        annotation.title = tram.number
+        if tram.lowFloor == true {
+            annotation.subtitle = "Low floor tram"
         }
+        map.addAnnotation(annotation)
     }
     
     // Zoom map to current location
@@ -101,14 +83,14 @@ class MapViewController: UIViewController {
     }
     
     private func goToMainDesktop(errorMessage error: String) {
-        print("error: \(error)")
+        NSLog(error)
         
         let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default) {
             UIAlertAction in
-            self.performSegueWithIdentifier("showMainDesktop", sender: nil)
+            self.performSegueWithIdentifier("ShowMainDesktop", sender: nil)
         }
         
-        self.showAlert("Error", message: error, okAction: okAction)
+        showAlert("Error", message: error, okAction: okAction)
     }
 }
 
@@ -119,7 +101,7 @@ extension MapViewController: CLLocationManagerDelegate {
         //  Check access for user location
         if status == .AuthorizedWhenInUse {
             locationManager.requestLocation()
-            fetchTramsData()
+            displayTramsOnMap()
         } else {
             showSettingsAlert()
         }
@@ -136,7 +118,7 @@ extension MapViewController: CLLocationManagerDelegate {
     }
     
     func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
-        print("error:: \(error)")
+        NSLog(error.localizedDescription)
     }
     
     private func showSettingsAlert() {
@@ -152,6 +134,6 @@ extension MapViewController: CLLocationManagerDelegate {
             self.performSegueWithIdentifier("ShowMainDesktop", sender: nil)
         }
         
-        self.showAlert("Error", message: "No access to location services. Do you want to change your settings now?", okAction: okAction, cancelAction: cancelAction)
+        showAlert("Error", message: "No access to location services. Do you want to change your settings now?", okAction: okAction, cancelAction: cancelAction)
     }
 }

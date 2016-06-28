@@ -17,8 +17,9 @@
 		5A30B1FF1D1C4DB8004F1D3A /* Warsaw_TramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A30B1FE1D1C4DB8004F1D3A /* Warsaw_TramTests.swift */; };
 		5A30B20A1D1C4DB8004F1D3A /* Warsaw_TramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A30B2091D1C4DB8004F1D3A /* Warsaw_TramUITests.swift */; };
 		5A7CDBDE1D1EAC9D00E26682 /* locationButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A7CDBDD1D1EAC9D00E26682 /* locationButton.png */; };
-		5AC909CD1D205B7700148A51 /* TramViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC909CC1D205B7700148A51 /* TramViewModel.swift */; };
-		5AC909D01D206B5200148A51 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC909CF1D206B5200148A51 /* UIViewController.swift */; };
+		5AC909CD1D205B7700148A51 /* Tram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC909CC1D205B7700148A51 /* Tram.swift */; };
+		5AC909D41D23013C00148A51 /* TramViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC909D31D23013C00148A51 /* TramViewModel.swift */; };
+		5AC909D61D23023300148A51 /* AlertHelperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC909D51D23023300148A51 /* AlertHelperProtocol.swift */; };
 		5AE6EB991D1C56960077AF40 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AE6EB981D1C56960077AF40 /* MapViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,8 +57,9 @@
 		5A30B2091D1C4DB8004F1D3A /* Warsaw_TramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Warsaw_TramUITests.swift; sourceTree = "<group>"; };
 		5A30B20B1D1C4DB8004F1D3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A7CDBDD1D1EAC9D00E26682 /* locationButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = locationButton.png; sourceTree = "<group>"; };
-		5AC909CC1D205B7700148A51 /* TramViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TramViewModel.swift; sourceTree = "<group>"; };
-		5AC909CF1D206B5200148A51 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewController.swift; path = Extensions/UIViewController.swift; sourceTree = "<group>"; };
+		5AC909CC1D205B7700148A51 /* Tram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tram.swift; sourceTree = "<group>"; };
+		5AC909D31D23013C00148A51 /* TramViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TramViewModel.swift; sourceTree = "<group>"; };
+		5AC909D51D23023300148A51 /* AlertHelperProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertHelperProtocol.swift; sourceTree = "<group>"; };
 		5AE6EB981D1C56960077AF40 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,11 +111,12 @@
 		5A30B1E51D1C4DB8004F1D3A /* Warsaw_Tram */ = {
 			isa = PBXGroup;
 			children = (
-				5AC909CE1D206B2200148A51 /* Extensions */,
 				5A30B1E61D1C4DB8004F1D3A /* AppDelegate.swift */,
 				5A30B1E81D1C4DB8004F1D3A /* ViewController.swift */,
 				5AE6EB981D1C56960077AF40 /* MapViewController.swift */,
-				5AC909CC1D205B7700148A51 /* TramViewModel.swift */,
+				5AC909CC1D205B7700148A51 /* Tram.swift */,
+				5AC909D31D23013C00148A51 /* TramViewModel.swift */,
+				5AC909D51D23023300148A51 /* AlertHelperProtocol.swift */,
 				5A30B1EA1D1C4DB8004F1D3A /* Main.storyboard */,
 				5A30B1F01D1C4DB8004F1D3A /* Assets.xcassets */,
 				5A30B1F21D1C4DB8004F1D3A /* LaunchScreen.storyboard */,
@@ -141,14 +144,6 @@
 				5A30B20B1D1C4DB8004F1D3A /* Info.plist */,
 			);
 			path = Warsaw_TramUITests;
-			sourceTree = "<group>";
-		};
-		5AC909CE1D206B2200148A51 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				5AC909CF1D206B5200148A51 /* UIViewController.swift */,
-			);
-			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,11 +280,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5AC909D01D206B5200148A51 /* UIViewController.swift in Sources */,
 				5A30B1E91D1C4DB8004F1D3A /* ViewController.swift in Sources */,
 				5A30B1E71D1C4DB8004F1D3A /* AppDelegate.swift in Sources */,
+				5AC909D41D23013C00148A51 /* TramViewModel.swift in Sources */,
 				5A30B1EF1D1C4DB8004F1D3A /* Warsaw_Tram.xcdatamodeld in Sources */,
-				5AC909CD1D205B7700148A51 /* TramViewModel.swift in Sources */,
+				5AC909CD1D205B7700148A51 /* Tram.swift in Sources */,
+				5AC909D61D23023300148A51 /* AlertHelperProtocol.swift in Sources */,
 				5AE6EB991D1C56960077AF40 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

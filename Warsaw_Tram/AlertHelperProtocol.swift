@@ -1,15 +1,21 @@
 //
-//  UIViewController.swift
+//  AlertHelperProtocol.swift
 //  Warsaw_Tram
 //
-//  Created by Małgorzata Dziubich on 26/06/16.
+//  Created by Małgorzata Dziubich on 28/06/16.
 //  Copyright © 2016 Małgorzata Dziubich. All rights reserved.
 //
 
 import UIKit
 
-extension UIViewController {
+protocol AlertHelperProtocol {
+    
+    func showAlert(title: String, message: String, okAction: UIAlertAction, cancelAction: UIAlertAction)
+    func showAlert(title: String, message: String, okAction: UIAlertAction)
+}
 
+extension AlertHelperProtocol where Self: UIViewController {
+    
     func showAlert(title: String, message: String, okAction: UIAlertAction, cancelAction: UIAlertAction) {
         // Create the alert controller
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .Alert)
@@ -19,7 +25,7 @@ extension UIViewController {
         alertController.addAction(cancelAction)
         
         // Present the controller
-        self.presentViewController(alertController, animated: true, completion: nil)
+        presentViewController(alertController, animated: true, completion: nil)
     }
     
     func showAlert(title: String, message: String, okAction: UIAlertAction) {
@@ -28,6 +34,6 @@ extension UIViewController {
         alertController.addAction(okAction)
         
         // Present the controller
-        self.presentViewController(alertController, animated: true, completion: nil)
+        presentViewController(alertController, animated: true, completion: nil)
     }
 }
