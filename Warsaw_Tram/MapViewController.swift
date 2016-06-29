@@ -55,6 +55,7 @@ class MapViewController: UIViewController, AlertHelperProtocol {
                     })
                 }
             }
+            self.showUserCurrentLocation()
         }, failure: { (error) in
             dispatch_async(dispatch_get_main_queue(), {
                 self.goToMainDesktop(errorMessage: error)
@@ -111,7 +112,6 @@ extension MapViewController: CLLocationManagerDelegate {
         if let location = locations.first {
             self.userLocation = location.coordinate
             if !userLocationDefined {
-                showUserCurrentLocation()
                 userLocationDefined = true
             }
         }

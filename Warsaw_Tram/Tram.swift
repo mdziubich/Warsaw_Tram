@@ -11,11 +11,11 @@ import CoreLocation
 
 class Tram {
 
-    var number: String!
-    var lattitude: CLLocationDegrees!
-    var longitude: CLLocationDegrees!
-    var lowFloor: Bool!
-    var status: String!
+    var number: String
+    var lattitude: CLLocationDegrees
+    var longitude: CLLocationDegrees
+    var lowFloor: Bool
+    var status: String
     
     init? (tram: [String: AnyObject]) {
         
