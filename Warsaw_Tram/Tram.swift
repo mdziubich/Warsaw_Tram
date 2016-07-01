@@ -12,7 +12,7 @@ import CoreLocation
 class Tram {
 
     var number: String
-    var lattitude: CLLocationDegrees
+    var latitude: CLLocationDegrees
     var longitude: CLLocationDegrees
     var lowFloor: Bool
     var status: String
@@ -28,7 +28,7 @@ class Tram {
             }
         
         self.number = line
-        self.lattitude = lat
+        self.latitude = lat
         self.longitude = lon
         self.lowFloor = lowFloor
         self.status = status

@@ -17,6 +17,7 @@ class TramViewModel: TramViewModelProtocol {
     
     let resourceId = "id=c7238cfe-8b1f-4c38-bb4a-de386db7e776"
     let warsawTramsApiKey = "apikey=060b903c-b0c3-427e-934d-9e4a81a61969"
+    var session = NSURLSession.self
 
     func getTramsData(success: [Tram] -> Void, failure: String -> Void) {
 
@@ -27,7 +28,7 @@ class TramViewModel: TramViewModelProtocol {
         let request = NSMutableURLRequest(URL: url)
         request.HTTPMethod = "GET"
         
-        let task = NSURLSession.sharedSession().dataTaskWithRequest(request) { data, response, error in
+        let task = session.sharedSession().dataTaskWithRequest(request) { data, response, error in
             
             guard let taskError = error?.localizedDescription else {
                 do {
@@ -36,6 +37,8 @@ class TramViewModel: TramViewModelProtocol {
                         let result: Array = jsonResult["result"] as? Array<AnyObject> else {
                             return failure("No results")
                         }
+                    print(result)
+
                     for tram in result {
                         if let singleTram = tram as? [String : AnyObject] {
                             trams.append(Tram(tram: singleTram)!)

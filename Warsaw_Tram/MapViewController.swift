@@ -48,12 +48,10 @@ class MapViewController: UIViewController, AlertHelperProtocol {
     
     private func displayTramsOnMap() {
         tramViewModel.getTramsData({ (trams) in
-            for tram in trams {
-                if tram.status == "RUNNING" {
-                    dispatch_async(dispatch_get_main_queue(), {
-                        self.addTramAnnotation(tram)
-                    })
-                }
+            for tram in trams where tram.status == "RUNNING" {
+                dispatch_async(dispatch_get_main_queue(), {
+                    self.addTramAnnotation(tram)
+                })
             }
             self.showUserCurrentLocation()
         }, failure: { (error) in
@@ -64,7 +62,7 @@ class MapViewController: UIViewController, AlertHelperProtocol {
     }
     
     private func addTramAnnotation(tram: Tram) {
-        let location:CLLocationCoordinate2D = CLLocationCoordinate2DMake(tram.lattitude, tram.longitude)
+        let location:CLLocationCoordinate2D = CLLocationCoordinate2DMake(tram.latitude, tram.longitude)
         let annotation = MKPointAnnotation()
         annotation.coordinate = location
         annotation.title = tram.number

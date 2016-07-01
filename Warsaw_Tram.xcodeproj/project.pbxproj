@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A077ACA1D25856800B3437C /* TramViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A077AC91D25856800B3437C /* TramViewModelTest.swift */; };
+		5A077ACC1D2589FA00B3437C /* StubNSURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A077ACB1D2589FA00B3437C /* StubNSURLSession.swift */; };
+		5A077ACE1D25A26700B3437C /* tram.xml in Resources */ = {isa = PBXBuildFile; fileRef = 5A077ACD1D25A26700B3437C /* tram.xml */; };
 		5A215D4D1D1DC9AA0014366F /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A215D4C1D1DC9AA0014366F /* background.png */; };
 		5A30B1E71D1C4DB8004F1D3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A30B1E61D1C4DB8004F1D3A /* AppDelegate.swift */; };
 		5A30B1E91D1C4DB8004F1D3A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A30B1E81D1C4DB8004F1D3A /* ViewController.swift */; };
@@ -14,7 +17,6 @@
 		5A30B1EF1D1C4DB8004F1D3A /* Warsaw_Tram.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5A30B1ED1D1C4DB8004F1D3A /* Warsaw_Tram.xcdatamodeld */; };
 		5A30B1F11D1C4DB8004F1D3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A30B1F01D1C4DB8004F1D3A /* Assets.xcassets */; };
 		5A30B1F41D1C4DB8004F1D3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A30B1F21D1C4DB8004F1D3A /* LaunchScreen.storyboard */; };
-		5A30B1FF1D1C4DB8004F1D3A /* Warsaw_TramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A30B1FE1D1C4DB8004F1D3A /* Warsaw_TramTests.swift */; };
 		5A30B20A1D1C4DB8004F1D3A /* Warsaw_TramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A30B2091D1C4DB8004F1D3A /* Warsaw_TramUITests.swift */; };
 		5A7CDBDE1D1EAC9D00E26682 /* locationButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A7CDBDD1D1EAC9D00E26682 /* locationButton.png */; };
 		5AC909CD1D205B7700148A51 /* Tram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC909CC1D205B7700148A51 /* Tram.swift */; };
@@ -41,6 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5A077AC91D25856800B3437C /* TramViewModelTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TramViewModelTest.swift; sourceTree = "<group>"; };
+		5A077ACB1D2589FA00B3437C /* StubNSURLSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubNSURLSession.swift; sourceTree = "<group>"; };
+		5A077ACD1D25A26700B3437C /* tram.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = tram.xml; sourceTree = "<group>"; };
 		5A215D4C1D1DC9AA0014366F /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		5A30B1E31D1C4DB8004F1D3A /* Warsaw_Tram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Warsaw_Tram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A30B1E61D1C4DB8004F1D3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -51,7 +56,6 @@
 		5A30B1F31D1C4DB8004F1D3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A30B1F51D1C4DB8004F1D3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A30B1FA1D1C4DB8004F1D3A /* Warsaw_TramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Warsaw_TramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5A30B1FE1D1C4DB8004F1D3A /* Warsaw_TramTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Warsaw_TramTests.swift; sourceTree = "<group>"; };
 		5A30B2001D1C4DB8004F1D3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A30B2051D1C4DB8004F1D3A /* Warsaw_TramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Warsaw_TramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A30B2091D1C4DB8004F1D3A /* Warsaw_TramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Warsaw_TramUITests.swift; sourceTree = "<group>"; };
@@ -131,8 +135,10 @@
 		5A30B1FD1D1C4DB8004F1D3A /* Warsaw_TramTests */ = {
 			isa = PBXGroup;
 			children = (
-				5A30B1FE1D1C4DB8004F1D3A /* Warsaw_TramTests.swift */,
+				5A077AC91D25856800B3437C /* TramViewModelTest.swift */,
+				5A077ACB1D2589FA00B3437C /* StubNSURLSession.swift */,
 				5A30B2001D1C4DB8004F1D3A /* Info.plist */,
+				5A077ACD1D25A26700B3437C /* tram.xml */,
 			);
 			path = Warsaw_TramTests;
 			sourceTree = "<group>";
@@ -263,6 +269,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A077ACE1D25A26700B3437C /* tram.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +301,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A30B1FF1D1C4DB8004F1D3A /* Warsaw_TramTests.swift in Sources */,
+				5A077ACC1D2589FA00B3437C /* StubNSURLSession.swift in Sources */,
+				5A077ACA1D25856800B3437C /* TramViewModelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
