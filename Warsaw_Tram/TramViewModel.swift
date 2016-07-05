@@ -37,7 +37,6 @@ class TramViewModel: TramViewModelProtocol {
                         let result: Array = jsonResult["result"] as? Array<AnyObject> else {
                             return failure("No results")
                         }
-                    print(result)
 
                     for tram in result {
                         if let singleTram = tram as? [String : AnyObject] {

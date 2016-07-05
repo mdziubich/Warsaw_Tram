@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vbf-jH-Z87">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -18,37 +18,92 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="rFW-OA-JC0">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="rFW-OA-JC0">
+                                <rect key="frame" x="-4" y="0.0" width="383" height="667"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Yy-QN-IML">
-                                <rect key="frame" x="34" y="256" width="306" height="30"/>
-                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="20"/>
-                                <state key="normal" title="Show map with trams in Warsaw">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Yy-QN-IML">
+                                <rect key="frame" x="95" y="455" width="184" height="30"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="16"/>
+                                <state key="normal" title="Show all trams in Warsaw">
                                     <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="gJF-Ge-NGP" kind="show" id="Fch-Me-EBV"/>
+                                    <action selector="showAllTramsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ekX-4j-l5r"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Only low floor trams" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CmS-UC-7wm">
+                                <rect key="frame" x="82" y="280" width="211" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="211" id="HnV-C7-hdu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="....................................." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xnR-nA-NcA">
+                                <rect key="frame" x="101" y="378" width="173" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Xc-QY-Qtu">
+                                <rect key="frame" x="243" y="280" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchValueDidChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="nIC-Jh-1oQ"/>
+                                </connections>
+                            </switch>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NbX-8M-Is4">
+                                <rect key="frame" x="-4" y="56" width="383" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="f1K-Ju-EPw"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Tof-Qk-jZi"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Choose the tram number:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wio-b3-ZY0">
+                                <rect key="frame" x="91" y="35" width="193" height="21"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nd3-Zy-Tm7">
+                                <rect key="frame" x="102" y="319" width="170" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="Show tram on map"/>
+                                <connections>
+                                    <action selector="showTramsButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gZ4-U7-IU2"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="0Yy-QN-IML" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="182" id="5Uk-Ds-nWs"/>
-                            <constraint firstItem="0Yy-QN-IML" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6NV-Ft-eA3"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rFW-OA-JC0" secondAttribute="bottom" id="HhG-pc-i2d"/>
-                            <constraint firstItem="rFW-OA-JC0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Kge-Nh-yoc"/>
-                            <constraint firstItem="rFW-OA-JC0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="Rym-Dv-UhK"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="rFW-OA-JC0" secondAttribute="trailing" constant="-20" id="U7s-Qb-4hA"/>
+                            <constraint firstItem="Nd3-Zy-Tm7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4h5-Uj-vjt"/>
+                            <constraint firstItem="NbX-8M-Is4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="87M-we-t0F"/>
+                            <constraint firstItem="3Xc-QY-Qtu" firstAttribute="leading" secondItem="CmS-UC-7wm" secondAttribute="trailing" constant="-50" id="89T-XY-1K7"/>
+                            <constraint firstItem="Nd3-Zy-Tm7" firstAttribute="top" secondItem="3Xc-QY-Qtu" secondAttribute="bottom" constant="8" symbolic="YES" id="9ot-0E-vXM"/>
+                            <constraint firstItem="wio-b3-ZY0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="H2h-H7-74z"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NbX-8M-Is4" secondAttribute="trailing" constant="-20" id="JeQ-VM-pL9"/>
+                            <constraint firstItem="3Xc-QY-Qtu" firstAttribute="top" secondItem="CmS-UC-7wm" secondAttribute="top" id="P83-I7-w27"/>
+                            <constraint firstItem="xnR-nA-NcA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qot-Q5-rfe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3Xc-QY-Qtu" secondAttribute="trailing" constant="67" id="VGW-26-FBC"/>
+                            <constraint firstItem="3Xc-QY-Qtu" firstAttribute="bottom" secondItem="CmS-UC-7wm" secondAttribute="bottom" id="X4e-ox-gqX"/>
+                            <constraint firstItem="wio-b3-ZY0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="15" id="dEn-xn-04L"/>
+                            <constraint firstItem="0Yy-QN-IML" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iCF-KU-1ng"/>
+                            <constraint firstItem="NbX-8M-Is4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="jSV-vp-Zqf"/>
+                            <constraint firstItem="CmS-UC-7wm" firstAttribute="top" secondItem="NbX-8M-Is4" secondAttribute="bottom" constant="8" id="l8p-iA-wil"/>
+                            <constraint firstItem="NbX-8M-Is4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="36" id="rXl-kQ-bFc"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="s0R-DU-ru9"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="lowFloorTramSwitch" destination="3Xc-QY-Qtu" id="nod-M3-ngv"/>
+                        <outlet property="pickerView" destination="NbX-8M-Is4" id="FXb-cU-lCd"/>
+                        <segue destination="gJF-Ge-NGP" kind="show" identifier="ShowMap" id="7VX-10-p2o"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047.5" y="366.5"/>
+            <point key="canvasLocation" x="791.5" y="416.5"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="sao-23-AqQ">
@@ -79,6 +134,18 @@
                                     <action selector="showCurrentLocation:" destination="gJF-Ge-NGP" eventType="touchUpInside" id="Tp4-yU-3al"/>
                                 </connections>
                             </button>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I37-RV-ijW">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem id="Jik-U2-8Ly">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" style="done" id="Yrt-Cm-Jq6">
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="CMy-i8-Eyd"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -96,31 +163,12 @@
             </objects>
             <point key="canvasLocation" x="1518.5" y="366.5"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="hLk-Zf-U94">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vbf-jH-Z87" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fPj-IO-6pB">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="tP1-VM-m5g"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="enN-MW-D40" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="591" y="367"/>
-        </scene>
     </scenes>
     <resources>
         <image name="background.png" width="394" height="727"/>
         <image name="locationButton.png" width="39" height="38"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="nJn-jY-AX9"/>
+        <segue reference="CMy-i8-Eyd"/>
     </inferredMetricsTieBreakers>
 </document>

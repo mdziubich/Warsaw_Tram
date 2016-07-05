@@ -13,10 +13,15 @@ import CoreLocation
 class MapViewController: UIViewController, AlertHelperProtocol {
 
     @IBOutlet var map: MKMapView!
+    
     var locationManager = CLLocationManager()
     var userLocationDefined = false
     var userLocation: CLLocationCoordinate2D?
     let tramViewModel = TramViewModel()
+    var allActiveTrams = [Tram]()
+    var tramNumberToDisplayOnMap = String()
+    var lowFloorFilter: Bool = false
+    var showAllTrams: Bool = false
     
     let resourceId = "id=c7238cfe-8b1f-4c38-bb4a-de386db7e776"
     let warsawTramsApiKey = "apikey=060b903c-b0c3-427e-934d-9e4a81a61969"
@@ -46,18 +51,22 @@ class MapViewController: UIViewController, AlertHelperProtocol {
     }
     
     private func displayTramsOnMap() {
-        tramViewModel.getTramsData({ (trams) in
-            for tram in trams where tram.status == "RUNNING" {
-                dispatch_async(dispatch_get_main_queue(), {
+        let priority = DISPATCH_QUEUE_PRIORITY_DEFAULT
+        dispatch_async(dispatch_get_global_queue(priority, 0)) {
+            for tram in self.allActiveTrams {
+                if self.showAllTrams {
                     self.addTramAnnotation(tram)
-                })
+                } else if self.lowFloorFilter && tram.lowFloor && tram.number.stringByReplacingOccurrencesOfString(" ", withString: "") == self.tramNumberToDisplayOnMap {
+                    self.addTramAnnotation(tram)
+                } else if tram.number.stringByReplacingOccurrencesOfString(" ", withString: "") == self.tramNumberToDisplayOnMap {
+                    self.addTramAnnotation(tram)
+                }
             }
-            self.showUserCurrentLocation()
-        }, failure: { (error) in
+            
             dispatch_async(dispatch_get_main_queue(), {
-                self.goToMainDesktop(errorMessage: error)
+                self.showUserCurrentLocation()
             })
-        })
+        }
     }
     
     private func addTramAnnotation(tram: Tram) {
@@ -79,17 +88,6 @@ class MapViewController: UIViewController, AlertHelperProtocol {
             self.map.setRegion(region, animated: true)
         }
     }
-    
-    private func goToMainDesktop(errorMessage error: String) {
-        NSLog(error)
-        
-        let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default) {
-            UIAlertAction in
-            self.performSegueWithIdentifier("ShowMainDesktop", sender: nil)
-        }
-        
-        showAlert("Error", message: error, okAction: okAction)
-    }
 }
 
 // MARK: CLLocationManagerDelegate
@@ -100,6 +98,7 @@ extension MapViewController: CLLocationManagerDelegate {
         if status == .AuthorizedWhenInUse {
             locationManager.requestLocation()
             displayTramsOnMap()
+            showUserCurrentLocation()
         } else {
             showSettingsAlert()
         }
