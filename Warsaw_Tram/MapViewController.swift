@@ -13,15 +13,11 @@ import CoreLocation
 class MapViewController: UIViewController, AlertHelperProtocol {
 
     @IBOutlet var map: MKMapView!
+    
     var locationManager = CLLocationManager()
-    var userLocationDefined = false
     var userLocation: CLLocationCoordinate2D?
     let tramViewModel = TramViewModel()
-    
-    let resourceId = "id=c7238cfe-8b1f-4c38-bb4a-de386db7e776"
-    let warsawTramsApiKey = "apikey=060b903c-b0c3-427e-934d-9e4a81a61969"
-    let mapLatDelta: CLLocationDegrees = 0.05
-    let mapLonDelta: CLLocationDegrees = 0.05
+    var trams: DisplayedTramsData?
     
     override func viewDidLoad() {
         setupMap()
@@ -46,20 +42,20 @@ class MapViewController: UIViewController, AlertHelperProtocol {
     }
     
     private func displayTramsOnMap() {
-        tramViewModel.getTramsData({ (trams) in
-            for tram in trams where tram.status == "RUNNING" {
+        if let tramsParameters = trams {
+            tramViewModel.fetchTramsForMap(tramsParameters, success: { [weak self] (trams) in
+                for tram in trams {
+                    self?.addTramAnnotation(tram)
+                }
+                self?.showUserCurrentLocation()
+            }, failure: { (error) in
                 dispatch_async(dispatch_get_main_queue(), {
-                    self.addTramAnnotation(tram)
+                    self.showError(message: error)
                 })
-            }
-            self.showUserCurrentLocation()
-        }, failure: { (error) in
-            dispatch_async(dispatch_get_main_queue(), {
-                self.goToMainDesktop(errorMessage: error)
             })
-        })
+        }
     }
-    
+
     private func addTramAnnotation(tram: Tram) {
         let location:CLLocationCoordinate2D = CLLocationCoordinate2DMake(tram.latitude, tram.longitude)
         let annotation = MKPointAnnotation()
@@ -74,20 +70,22 @@ class MapViewController: UIViewController, AlertHelperProtocol {
     // Zoom map to current location
     private func showUserCurrentLocation() {
         if let location = self.userLocation {
+            let mapLatDelta: CLLocationDegrees = 0.05
+            let mapLonDelta: CLLocationDegrees = 0.05
+            
             let span = MKCoordinateSpanMake(mapLatDelta, mapLonDelta)
             let region = MKCoordinateRegion(center: location, span: span)
             self.map.setRegion(region, animated: true)
         }
     }
     
-    private func goToMainDesktop(errorMessage error: String) {
+    private func showError(message error: String) {
         NSLog(error)
         
         let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default) {
             UIAlertAction in
-            self.performSegueWithIdentifier("ShowMainDesktop", sender: nil)
+            self.performSegueWithIdentifier("ShowMainDesktop", sender: self)
         }
-        
         showAlert("Error", message: error, okAction: okAction)
     }
 }
@@ -100,6 +98,7 @@ extension MapViewController: CLLocationManagerDelegate {
         if status == .AuthorizedWhenInUse {
             locationManager.requestLocation()
             displayTramsOnMap()
+            showUserCurrentLocation()
         } else {
             showSettingsAlert()
         }
@@ -108,9 +107,6 @@ extension MapViewController: CLLocationManagerDelegate {
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.first {
             self.userLocation = location.coordinate
-            if !userLocationDefined {
-                userLocationDefined = true
-            }
         }
     }
     
