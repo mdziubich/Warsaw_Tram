@@ -14,12 +14,10 @@ class InitialViewController: UIViewController, AlertHelperProtocol {
     @IBOutlet var lowFloorTramSwitch: UISwitch!
     
     let tramViewModel = TramViewModel()
-    
-    var allActiveTrams = [Tram]()
     var tramsNumberList = [Int]()
     var lowFloorTramsNumberList = [Int]()
-    var tramNumberToDisplayOnMap = String()
-    var showAllTrams: Bool = false
+    var tramNumberToDisplayOnMap = ""
+    var showAllTrams = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,13 +29,13 @@ class InitialViewController: UIViewController, AlertHelperProtocol {
         if tramNumberToDisplayOnMap == "" {
             showError(message: "You need to choose a tram!")
         } else {
-            self.performSegueWithIdentifier("ShowMap", sender: self)
+            performSegueWithIdentifier("ShowMap", sender: self)
         }
     }
     
     @IBAction func showAllTramsButton(sender: AnyObject) {
         showAllTrams = true
-        self.performSegueWithIdentifier("ShowMap", sender: self)
+        performSegueWithIdentifier("ShowMap", sender: self)
     }
     
     @IBAction func switchValueDidChange(sender: AnyObject) {
@@ -46,43 +44,27 @@ class InitialViewController: UIViewController, AlertHelperProtocol {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let viewController = segue.destinationViewController as! MapViewController
-        viewController.allActiveTrams = allActiveTrams
-        viewController.tramNumberToDisplayOnMap = tramNumberToDisplayOnMap
-        viewController.lowFloorFilter = lowFloorTramSwitch.on
-        viewController.showAllTrams = showAllTrams
+        let trams = DisplayedTramsData(tramNumberToDisplayOnMap: tramNumberToDisplayOnMap, showAllTrams: showAllTrams, lowFloorFilter: lowFloorTramSwitch.on)
+        viewController.trams = trams
     }
     
     private func fetchTramsData() {
-        tramViewModel.getTramsData({ (trams) in
-            for tram in trams where tram.status == "RUNNING" {
-                self.allActiveTrams.append(tram)
+        tramViewModel.fetchTramsNumbers({ [weak self] (trams, lowFloorTrams) in
+            self?.tramsNumberList = trams
+            self?.lowFloorTramsNumberList = lowFloorTrams
+            if let firstTram = self?.tramsNumberList[0] {
+                self?.tramNumberToDisplayOnMap = String(firstTram)
             }
-            self.sortTramsNumbers()
-            self.pickerView.reloadAllComponents()
+            dispatch_async(dispatch_get_main_queue(), {
+                self?.pickerView.reloadAllComponents()
+                self?.pickerView.selectRow(0, inComponent: 0, animated: true)
+            })
+
         }, failure: { (error) in
             dispatch_async(dispatch_get_main_queue(), {
                 self.showError(message: error)
             })
         })
-    }
-    
-    //  Prepare sorted list of all active trams and active low floor to display in UIPickerView
-    private func sortTramsNumbers() {
-        var tramNumbers = [Int]()
-        var lowFloorTrams = [Int]()
-        
-        for tram in allActiveTrams {
-            if let number = Int(tram.number.stringByReplacingOccurrencesOfString(" ", withString: "")) {
-                if tram.lowFloor {
-                    lowFloorTrams.append(number)
-                    tramNumbers.append(number)
-                } else {
-                    tramNumbers.append(number)
-                }
-            }
-        }
-        tramsNumberList = tramNumbers.unique().sort(){$0 < $1}
-        lowFloorTramsNumberList = lowFloorTrams.unique().sort(){$0 < $1}
     }
     
     private func showError(message error: String) {

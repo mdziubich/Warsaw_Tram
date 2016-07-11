@@ -52,4 +52,48 @@ class TramViewModel: TramViewModelProtocol {
         }
         task.resume()
     }
+    
+    func fetchTramsNumbers(success: (trams: [Int], lowFloorTrams: [Int]) -> Void, failure: String -> Void) {
+        getTramsData({ (trams) in
+            var tramNumbers = [Int]()
+            var lowFloorTrams = [Int]()
+            
+            for tram in trams where tram.status == "RUNNING" {
+                if let number = Int(tram.number) {
+                    if tram.lowFloor {
+                        lowFloorTrams.append(number)
+                        tramNumbers.append(number)
+                    } else {
+                        tramNumbers.append(number)
+                    }
+                }
+            }
+            let tramsNumberList = tramNumbers.unique().sort(){$0 < $1}
+            let lowFloorTramsNumberList = lowFloorTrams.unique().sort(){$0 < $1}
+            
+            success(trams: tramsNumberList, lowFloorTrams: lowFloorTramsNumberList)
+            
+        }, failure: { (error) in
+                failure(error)
+        })
+    }
+    
+    func fetchTramsForMap(tramsParameters: DisplayedTramsData, success: [Tram] -> Void, failure: String -> Void) {
+        getTramsData({ (trams) in
+            var finalTrams = [Tram]()
+            for tram in trams where tram.status == "RUNNING" {
+                if tramsParameters.showAllTrams {
+                    finalTrams.append(tram)
+                } else if tramsParameters.lowFloorFilter && tram.lowFloor && tram.number == tramsParameters.tramNumberToDisplayOnMap {
+                    finalTrams.append(tram)
+                } else if tram.number == tramsParameters.tramNumberToDisplayOnMap {
+                    finalTrams.append(tram)
+                }
+            }
+            success(finalTrams)
+            
+        }, failure: { (error) in
+            failure(error)
+        })
+    }
 }
