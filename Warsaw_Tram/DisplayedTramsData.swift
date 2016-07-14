@@ -8,7 +8,7 @@
 
 struct DisplayedTramsData {
 
-    var tramNumberToDisplayOnMap: String
+    var tramNumber: String
     var showAllTrams: Bool
     var lowFloorFilter: Bool
 }

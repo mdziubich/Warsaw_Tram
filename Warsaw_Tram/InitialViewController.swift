@@ -16,7 +16,7 @@ class InitialViewController: UIViewController, AlertHelperProtocol {
     let tramViewModel = TramViewModel()
     var tramsNumberList = [Int]()
     var lowFloorTramsNumberList = [Int]()
-    var tramNumberToDisplayOnMap = ""
+    var tramNumber = ""
     var showAllTrams = false
 
     override func viewDidLoad() {
@@ -26,7 +26,7 @@ class InitialViewController: UIViewController, AlertHelperProtocol {
     }
     
     @IBAction func showTramsButton(sender: AnyObject) {
-        if tramNumberToDisplayOnMap == "" {
+        if tramNumber == "" {
             showError(message: "You need to choose a tram!")
         } else {
             performSegueWithIdentifier("ShowMap", sender: self)
@@ -44,7 +44,7 @@ class InitialViewController: UIViewController, AlertHelperProtocol {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let viewController = segue.destinationViewController as! MapViewController
-        let trams = DisplayedTramsData(tramNumberToDisplayOnMap: tramNumberToDisplayOnMap, showAllTrams: showAllTrams, lowFloorFilter: lowFloorTramSwitch.on)
+        let trams = DisplayedTramsData(tramNumber: tramNumber, showAllTrams: showAllTrams, lowFloorFilter: lowFloorTramSwitch.on)
         viewController.trams = trams
     }
     
@@ -53,7 +53,7 @@ class InitialViewController: UIViewController, AlertHelperProtocol {
             self?.tramsNumberList = trams
             self?.lowFloorTramsNumberList = lowFloorTrams
             if let firstTram = self?.tramsNumberList[0] {
-                self?.tramNumberToDisplayOnMap = String(firstTram)
+                self?.tramNumber = String(firstTram)
             }
             dispatch_async(dispatch_get_main_queue(), {
                 self?.pickerView.reloadAllComponents()
@@ -93,6 +93,6 @@ extension InitialViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     }
     
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        tramNumberToDisplayOnMap = lowFloorTramSwitch.on ? String(lowFloorTramsNumberList[row]) : String(tramsNumberList[row])
+        tramNumber = lowFloorTramSwitch.on ? String(lowFloorTramsNumberList[row]) : String(tramsNumberList[row])
     }
 }

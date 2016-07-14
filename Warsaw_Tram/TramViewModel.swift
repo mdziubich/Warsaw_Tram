@@ -84,9 +84,9 @@ class TramViewModel: TramViewModelProtocol {
             for tram in trams where tram.status == "RUNNING" {
                 if tramsParameters.showAllTrams {
                     finalTrams.append(tram)
-                } else if tramsParameters.lowFloorFilter && tram.lowFloor && tram.number == tramsParameters.tramNumberToDisplayOnMap {
+                } else if tramsParameters.lowFloorFilter && tram.lowFloor && tram.number == tramsParameters.tramNumber {
                     finalTrams.append(tram)
-                } else if tram.number == tramsParameters.tramNumberToDisplayOnMap {
+                } else if tram.number == tramsParameters.tramNumber {
                     finalTrams.append(tram)
                 }
             }
