@@ -8,19 +8,58 @@
 
 import UIKit
 
-protocol TramViewModelProtocol {
-    
-    func getTramsData(success: [Tram] -> Void, failure: String -> Void)
-}
-
-class TramViewModel: TramViewModelProtocol {
+class TramViewModel {
     
     let resourceId = "id=c7238cfe-8b1f-4c38-bb4a-de386db7e776"
     let warsawTramsApiKey = "apikey=060b903c-b0c3-427e-934d-9e4a81a61969"
     var session = NSURLSession.self
-
-    func getTramsData(success: [Tram] -> Void, failure: String -> Void) {
-
+    
+    func fetchTramsNumbers(success: (trams: [Int], lowFloorTrams: [Int]) -> Void, failure: String -> Void) {
+        getTramsData({ (trams) in
+            var tramNumbers = [Int]()
+            var lowFloorTrams = [Int]()
+            
+            for tram in trams where tram.status == "RUNNING" {
+                if let number = Int(tram.number) {
+                    if tram.lowFloor {
+                        lowFloorTrams.append(number)
+                        tramNumbers.append(number)
+                    } else {
+                        tramNumbers.append(number)
+                    }
+                }
+            }
+            let tramsNumberList = tramNumbers.unique().sort(){$0 < $1}
+            let lowFloorTramsNumberList = lowFloorTrams.unique().sort(){$0 < $1}
+            
+            success(trams: tramsNumberList, lowFloorTrams: lowFloorTramsNumberList)
+            
+        }, failure: { (error) in
+                failure(error)
+        })
+    }
+    
+    func fetchTramsForMap(tramsParameters: DisplayedTramsData, success: [Tram] -> Void, failure: String -> Void) {
+        getTramsData({ (trams) in
+            var finalTrams = [Tram]()
+            for tram in trams where tram.status == "RUNNING" {
+                if tramsParameters.showAllTrams {
+                    finalTrams.append(tram)
+                } else if tramsParameters.lowFloorFilter && tram.lowFloor && tram.number == tramsParameters.tramNumber {
+                    finalTrams.append(tram)
+                } else if tram.number == tramsParameters.tramNumber {
+                    finalTrams.append(tram)
+                }
+            }
+            success(finalTrams)
+            
+        }, failure: { (error) in
+            failure(error)
+        })
+    }
+    
+    private func getTramsData(success: [Tram] -> Void, failure: String -> Void) {
+        
         var trams = [Tram]()
         let stringURL = "https://api.um.warszawa.pl/api/action/wsstore_get?\(resourceId)&\(warsawTramsApiKey)"
         let url = NSURL(string: stringURL)!
@@ -36,9 +75,8 @@ class TramViewModel: TramViewModelProtocol {
                         let jsonResult = try NSJSONSerialization.JSONObjectWithData(taskData, options: NSJSONReadingOptions.MutableContainers) as? NSDictionary,
                         let result: Array = jsonResult["result"] as? Array<AnyObject> else {
                             return failure("No results")
-                        }
-                    print(result)
-
+                    }
+                    
                     for tram in result {
                         if let singleTram = tram as? [String : AnyObject] {
                             trams.append(Tram(tram: singleTram)!)
@@ -52,5 +90,49 @@ class TramViewModel: TramViewModelProtocol {
             failure(taskError)
         }
         task.resume()
+    }
+    
+    func fetchTramsNumbers(success: (trams: [Int], lowFloorTrams: [Int]) -> Void, failure: String -> Void) {
+        getTramsData({ (trams) in
+            var tramNumbers = [Int]()
+            var lowFloorTrams = [Int]()
+            
+            for tram in trams where tram.status == "RUNNING" {
+                if let number = Int(tram.number) {
+                    if tram.lowFloor {
+                        lowFloorTrams.append(number)
+                        tramNumbers.append(number)
+                    } else {
+                        tramNumbers.append(number)
+                    }
+                }
+            }
+            let tramsNumberList = tramNumbers.unique().sort(){$0 < $1}
+            let lowFloorTramsNumberList = lowFloorTrams.unique().sort(){$0 < $1}
+            
+            success(trams: tramsNumberList, lowFloorTrams: lowFloorTramsNumberList)
+            
+        }, failure: { (error) in
+                failure(error)
+        })
+    }
+    
+    func fetchTramsForMap(tramsParameters: DisplayedTramsData, success: [Tram] -> Void, failure: String -> Void) {
+        getTramsData({ (trams) in
+            var finalTrams = [Tram]()
+            for tram in trams where tram.status == "RUNNING" {
+                if tramsParameters.showAllTrams {
+                    finalTrams.append(tram)
+                } else if tramsParameters.lowFloorFilter && tram.lowFloor && tram.number == tramsParameters.tramNumber {
+                    finalTrams.append(tram)
+                } else if tram.number == tramsParameters.tramNumber {
+                    finalTrams.append(tram)
+                }
+            }
+            success(finalTrams)
+            
+        }, failure: { (error) in
+            failure(error)
+        })
     }
 }

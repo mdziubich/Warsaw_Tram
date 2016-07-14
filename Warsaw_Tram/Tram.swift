@@ -27,7 +27,7 @@ class Tram {
                 return nil
             }
         
-        self.number = line
+        self.number = line.stringByReplacingOccurrencesOfString(" ", withString: "")
         self.latitude = lat
         self.longitude = lon
         self.lowFloor = lowFloor
